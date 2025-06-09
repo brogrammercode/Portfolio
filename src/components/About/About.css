@@ -1,0 +1,33 @@
+.about-main {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.about-tile {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  flex: 5;
+}
+
+.about-title {
+  color: grey;
+  font-size: 13px;
+}
+
+.about-subtitle {
+  margin-top: 20px;
+  font-weight: 500;
+  max-width: 600px;
+}
+
+.team {
+  flex: 2;
+}
+
+.description {
+  flex: 3;
+}

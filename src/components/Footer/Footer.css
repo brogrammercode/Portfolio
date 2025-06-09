@@ -1,0 +1,61 @@
+.footer-main {
+  display: flex;
+  align-items: start;
+  background-color: #232323;
+  padding: 32px 32px 40px;
+}
+
+.footer-tile {
+  display: flex;
+  flex-direction: column;
+}
+
+.version {
+  flex: 5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.version-number {
+  display: inline-block;
+  width: auto;
+  padding: 4px 8px 4px;
+  color: yellow;
+  border: 1px solid yellow;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.version span {
+  font-size: 13px;
+  color: #999;
+}
+
+.socials {
+  flex: 2;
+}
+
+.footer-item {
+  display: inline-block;
+  font-weight: 500;
+  text-decoration: underline dotted;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #999;
+  margin-bottom: 10px;
+}
+
+.footer-item:hover {
+  background-color: rgba(255, 255, 0, 0.103);
+  color: yellow;
+}
+
+.email {
+  flex: 3;
+}
+
+.email span {
+  font-weight: 500;
+  margin-bottom: 5px;
+}

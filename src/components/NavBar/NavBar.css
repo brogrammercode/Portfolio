@@ -1,0 +1,33 @@
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  padding: 16px 0px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.28);
+  background: rgba(17, 17, 17, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.nav-item {
+  font-weight: 500;
+}
+
+.nav-name {
+  flex: 5;
+  cursor: pointer;
+}
+
+.nav-name:hover {
+  color: yellow;
+}
+
+.nav-profession {
+  flex: 2;
+}
+
+.nav-address {
+  flex: 3;
+}
