@@ -1,0 +1,66 @@
+.detail-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.rest {
+  margin-top: 2em;
+  display: flex;
+}
+
+.left {
+  flex: 3;
+}
+
+.left-title {
+  font-size: 2em;
+}
+
+.left-subtitle {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #999;
+}
+
+.right {
+  flex: 7;
+}
+
+.description {
+  display: flex;
+  gap: 2em;
+}
+
+.right-desc {
+  flex: 1;
+  font-weight: 500;
+}
+
+.detail {
+  margin-top: 2em;
+  display: flex;
+}
+
+.detail-tile {
+  margin-right: 13em;
+}
+
+.detail-tile p {
+  font-size: 13px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.detail-tile span {
+  font-weight: 500;
+}
+
+.images {
+  margin-top: 2em;
+}
+
+.images-tile {
+  margin-top: 0.5em;
+  width: 100%;
+}

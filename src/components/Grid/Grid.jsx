@@ -1,4 +1,5 @@
 import "./Grid.css";
+import { useNavigate } from "react-router-dom";
 
 const tiles = [
   {
@@ -48,6 +49,7 @@ function splitIntoColumns(arr, numCols) {
 }
 
 const Grid = () => {
+  const navigate = useNavigate();
   const columns = splitIntoColumns(tiles, 3);
 
   return (
@@ -55,7 +57,11 @@ const Grid = () => {
       {columns.map((col, colIdx) => (
         <div className="grid-col" key={colIdx}>
           {col.map((tile, idx) => (
-            <div className="grid-tile" key={idx}>
+            <div
+              className="grid-tile"
+              onClick={() => navigate(`/project/${idx}`)}
+              key={idx}
+            >
               <div
                 className="grid-tile-img-wrapper"
                 style={{ height: `${tile.height}px` }}
