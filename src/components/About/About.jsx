@@ -1,39 +1,43 @@
 import "./About.css";
+import aboutData from "./aboutData";
 
 const About = () => {
+  const { about, team, description } = aboutData;
+
   return (
-    <div className="about-main">
-      <div className="about-tile about">
-        <div className="about-title">ABOUT</div>
-        <div className="about-subtitle">
-          Jo (He/Him) designs interfaces. He thrives in complex, ambiguous
-          problem spaces focused around interactive media, digital tooling, and
-          multimodal interaction. He studied Communication Design↗ and
-          Human-Computer Interaction↗ at Carnegie Mellon University, an
-          experience he holds fondly and will cherish for the rest of his life.
-          If you have an interesting idea, please get in touch↗.
-        </div>
+    <section className="about-container">
+      <div className="about-section about">
+        <h2 className="section-title">{about.title}</h2>
+        <p className="section-content">{about.content}</p>
       </div>
-      <div className="about-tile team">
-        <div className="about-title">TEAM</div>
-        <div className="about-subtitle">
-          Notion <br /> 2025 - Present <br /> <br />
-          Azuki <br /> 2023 - 2025
-        </div>
+
+      <div className="about-section team">
+        <h2 className="section-title">{team.title}</h2>
+        <p className="section-content">
+          {team.companies.map((company, idx) => (
+            <span key={idx}>
+              {company.name} <br />
+              {company.duration}
+              <br />
+              <br />
+            </span>
+          ))}
+        </p>
       </div>
-      <div className="about-tile description">
-        <div className="about-title">DESCRIPTION</div>
-        <div className="about-subtitle">
-          Building beautiful tools for your life’s work. <br /> <br /> <br />
-          First full-time design hire. Scaled design team to 5 people. Built
-          Anime.com, Animee, and interactive experiences for the Azuki IP.{" "}
-          <br /> <br />
-          Design consulting for emerging AI and productivity companies. Notable
-          clients include Anysphere (Cursor AI)1, Rox2, andBrain Technologies
-          (Natural AI)3.
-        </div>
+
+      <div className="about-section description">
+        <h2 className="section-title">{description.title}</h2>
+        <p className="section-content">
+          {description.content.map((para, idx) => (
+            <span key={idx}>
+              {para}
+              <br />
+              <br />
+            </span>
+          ))}
+        </p>
       </div>
-    </div>
+    </section>
   );
 };
 

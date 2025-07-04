@@ -1,61 +1,92 @@
-.footer-main {
+.footer {
   display: flex;
-  align-items: start;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: #232323;
-  padding: 32px 32px 40px;
+  padding: 32px;
+  gap: 24px;
+  position: relative;
+  background-image: radial-gradient(#2c2c2c 1px, transparent 0);
+  background-size: 20px 20px;
 }
 
-.footer-tile {
+.footer-section {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-width: 200px;
 }
 
 .version {
   flex: 5;
-  display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 16px;
 }
 
-.version-number {
-  display: inline-block;
-  width: auto;
-  padding: 4px 8px 4px;
-  color: yellow;
-  border: 1px solid yellow;
-  border-radius: 50px;
-  margin-right: 20px;
-}
-
-.version span {
-  font-size: 13px;
-  color: #999;
-}
-
-.socials {
-  flex: 2;
-}
-
-.footer-item {
-  display: inline-block;
-  font-weight: 500;
-  text-decoration: underline dotted;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 1px;
-  text-decoration-color: #999;
-  margin-bottom: 10px;
-}
-
-.footer-item:hover {
-  background-color: rgba(255, 255, 0, 0.103);
-  color: yellow;
-}
-
-.email {
+.contact{
   flex: 3;
 }
 
-.email span {
+.socials{
+  flex: 2;
+}
+
+.version-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: transparent;
+  color: yellow;
+  border: 1px solid yellow;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.version-date {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.footer-link {
   font-weight: 500;
-  margin-bottom: 5px;
+  text-decoration: underline dotted;
+  text-underline-offset: 4px;
+  text-decoration-color: #888;
+  color: inherit;
+  transition: color 0.2s ease;
+  margin-bottom: 8px;
+}
+
+.footer-link:hover {
+  color: yellow;
+}
+
+.footer-heading {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.footer-email {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-email:hover {
+  color: yellow;
+}
+
+/* Responsive Stack */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .version {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

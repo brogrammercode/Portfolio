@@ -1,72 +1,62 @@
+import { useParams } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
+import { projectDetails } from "../Grid/projectDetails";
 import "./Detail.css";
 
 const Detail = () => {
+  const { id } = useParams();
+  const detailData = projectDetails[parseInt(id) || 0];
+
   return (
     <>
       <div className="padded-body">
         <NavBar />
         <img
-          src="https://joseph.cv/_next/image?url=%2Fproject-covers%2Fplane.jpg&w=1920&q=75"
-          alt=""
+          src={detailData.coverImage}
+          alt={detailData.title}
           className="detail-img"
         />
         <div className="rest">
           <div className="left">
-            <div className="left-title">PLANE</div>
-            <div className="left-subtitle">PRODUCTIVITY</div>
+            <div className="left-title">{detailData.title}</div>
+            <div className="left-subtitle">{detailData.subtitle}</div>
           </div>
           <div className="right">
             <div className="description">
-              <div className="right-desc">
-                Plane is a software company combining task management, wikis,
-                and editor features into one comprehensive productivity
-                platform. I consulted and advised the team around core product
-                surfaces. This
-              </div>
-              <div className="right-desc">
-                included redesigning navigation and all task views from scratch
-                — kanban, list, calendar, table, and timeilne view.
-              </div>
+              {detailData.description.map((desc, index) => (
+                <div className="right-desc" key={index}>
+                  {desc}
+                </div>
+              ))}
             </div>
             <div className="detail">
               <div className="detail-tile">
                 <p>ROLE</p>
-                <span>Product Designer</span>
+                <span>{detailData.role}</span>
               </div>
               <div className="detail-tile">
                 <p>Collaborators</p>
                 <span>
-                  Plane team <br /> Bryce Li
+                  {detailData.collaborators.map((person, index) => (
+                    <div key={index}>{person}</div>
+                  ))}
                 </span>
               </div>
               <div className="detail-tile">
                 <p>Duration</p>
-                <span>3 months</span>
+                <span>{detailData.duration}</span>
               </div>
             </div>
             <div className="images">
-              <img
-                src="https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flist-assignee-cropped.23166e7d.jpg&w=1920&q=75"
-                alt=""
-                className="images-tile"
-              />
-              <img
-                src="https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffilters.4ed82aeb.jpg&w=1920&q=75"
-                alt=""
-                className="images-tile"
-              />
-              <img
-                src="https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftable-cropped.8a31461c.jpg&w=1920&q=75"
-                alt=""
-                className="images-tile"
-              />
-              <img
-                src="https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkanban-cropped.b511c014.jpg&w=1920&q=75"
-                alt=""
-                className="images-tile"
-              />
+              {detailData.images.map((img, index) => (
+                <img
+                  src={img}
+                  alt={`screenshot-${index}`}
+                  className="images-tile"
+                  key={index}
+                />
+              ))}
             </div>
           </div>
         </div>

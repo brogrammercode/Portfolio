@@ -1,12 +1,15 @@
 import "./NavBar.css";
+import navData from "./navData";
 
 const NavBar = () => {
+  const { name, profession, address } = navData;
+
   return (
-    <div className="nav-bar">
-      <div className="nav-item nav-name">Harsh</div>
-      <div className="nav-item nav-profession">Software Developer</div>
-      <div className="nav-item nav-address">Bhagalpur, Bihar, India</div>
-    </div>
+    <nav className="nav-bar">
+      <div className="nav-item name">{name}</div>
+      <div className="nav-item profession">{profession}</div>
+      <div className="nav-item address">{address}</div>
+    </nav>
   );
 };
 

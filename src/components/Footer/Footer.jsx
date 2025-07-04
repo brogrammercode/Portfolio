@@ -1,22 +1,37 @@
 import "./Footer.css";
+import footerData from "./footerData";
 
 const Footer = () => {
   return (
-    <div className="footer-main">
-      <div className="footer-tile version">
-        <div className="version-number">v 0.0.1</div>
-        <span>LAST UPDATED 2025-06-06</span>
+    <footer className="footer">
+      <div className="footer-section version">
+        <span className="version-badge">{footerData.version.number}</span>
+        <span className="version-date">
+          Last updated {footerData.version.lastUpdated}
+        </span>
       </div>
-      <div className="footer-tile socials">
-        <div className="footer-item">Linkedin</div>
-        <div className="footer-item">Instagram</div>
-        <div className="footer-item">Twitter</div>
+
+      <div className="footer-section socials">
+        {footerData.socials.map((item, idx) => (
+          <a
+            key={idx}
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            {item.label}
+          </a>
+        ))}
       </div>
-      <div className="footer-tile email">
-        <span>Let's build something together.</span>
-        <div className="footer-item">harshsharma55115@gmail.com</div>
+
+      <div className="footer-section contact">
+        <span className="footer-heading">{footerData.contact.prompt}</span>
+        <a href={`mailto:${footerData.contact.email}`} className="footer-email">
+          {footerData.contact.email}
+        </a>
       </div>
-    </div>
+    </footer>
   );
 };
 
