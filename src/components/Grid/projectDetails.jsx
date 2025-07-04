@@ -30,9 +30,9 @@ export const projectDetails = [
     collaborators: ["Harsh Kumar"],
     duration: "3 months",
     images: [
-      "https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flist-assignee-cropped.23166e7d.jpg&w=1920&q=75",
-      "https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffilters.4ed82aeb.jpg&w=1920&q=75",
-      "https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftable-cropped.8a31461c.jpg&w=1920&q=75",
+      "https://ik.imagekit.io/disast3r/biZtrack-1/11.jpg?updatedAt=1748545172848",
+      "https://ik.imagekit.io/disast3r/biZtrack-1/10.jpg?updatedAt=1748545172811",
+      "https://ik.imagekit.io/disast3r/biZtrack-1/12.jpg?updatedAt=1748545172807",
       "https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkanban-cropped.b511c014.jpg&w=1920&q=75",
     ],
   },
@@ -49,8 +49,10 @@ export const projectDetails = [
     collaborators: ["Natural AI Core Team"],
     duration: "6 months",
     images: [
-      "https://example.com/natural-1.jpg",
-      "https://example.com/natural-2.jpg",
+      "https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flist-assignee-cropped.23166e7d.jpg&w=1920&q=75",
+      "https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffilters.4ed82aeb.jpg&w=1920&q=75",
+      "https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftable-cropped.8a31461c.jpg&w=1920&q=75",
+      "https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkanban-cropped.b511c014.jpg&w=1920&q=75",
     ],
   },
   {
