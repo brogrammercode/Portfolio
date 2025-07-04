@@ -1,15 +1,15 @@
 export const projectDetails = [
   {
-    title: "ANIMEE",
-    subtitle: "MOBILE APP",
+    title: "HELPNEST",
+    subtitle: "SERVICE PROVIDING & SEEKING MOBILE APP",
     coverImage:
       "https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fazuki.6b42d3cf.jpg&w=1920&q=75",
     description: [
-      "Animee is a mobile platform that helps anime fans track shows, rate episodes, and connect with other enthusiasts.",
-      "I worked on building the mobile UI and integrating animations and transitions using modern React Native components.",
+      "Real-time platform connecting users with nearby service providers using live location, Mapbox API, and Firebase.",
+      "Built with Flutter and BLoC architecture; integrated Firestore and Supabase for scalable data operations and secure file storage.",
     ],
-    role: "Frontend Engineer",
-    collaborators: ["Studio Azuki"],
+    role: "Flutter",
+    collaborators: ["Harsh Kumar"],
     duration: "4 months",
     images: [
       "https://example.com/animee-1.jpg",
@@ -18,16 +18,16 @@ export const projectDetails = [
     ],
   },
   {
-    title: "PLANE",
-    subtitle: "PRODUCTIVITY TOOL",
+    title: "BIZTRACK",
+    subtitle: "BUSINESS MANAGEMENT APP",
     coverImage:
       "https://joseph.cv/_next/image?url=%2Fproject-covers%2Fplane.jpg&w=1920&q=75",
     description: [
-      "Plane is a software company combining task management, wikis, and editor features into one comprehensive productivity platform. I consulted and advised the team around core product surfaces.",
-      "This included redesigning navigation and all task views from scratch — kanban, list, calendar, table, and timeline view.",
+      "Business management app supporting inventory, orders, staff, and daily sales tracking in real time.",
+      "Architected with modular BLoC structure and Firebase backend to ensure offline-first performance and multi-device sync.",
     ],
-    role: "Product Designer",
-    collaborators: ["Plane team", "Bryce Li"],
+    role: "Flutter + Firebase",
+    collaborators: ["Harsh Kumar"],
     duration: "3 months",
     images: [
       "https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flist-assignee-cropped.23166e7d.jpg&w=1920&q=75",
@@ -37,13 +37,13 @@ export const projectDetails = [
     ],
   },
   {
-    title: "NATURAL AI",
-    subtitle: "AI PLATFORM",
+    title: "GO EXTRA MILE",
+    subtitle: "RIDE TRACKING & REWARDING APP",
     coverImage:
       "https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnatural.63553f68.jpg&w=1920&q=75",
     description: [
-      "Natural AI is an intuitive interface for building and deploying machine learning models visually.",
-      "I worked closely with the design team to architect the dashboard and data visualization workflows.",
+      "Flash deal and reward platform offering users exclusive coupon codes and discounts across partner websites.",
+      "Built using Flutter, Firebase, and Cloud Functions to manage referral logic, coupon distribution, and user segmentation in real time.",
     ],
     role: "Frontend Lead",
     collaborators: ["Natural AI Core Team"],

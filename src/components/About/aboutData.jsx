@@ -2,27 +2,23 @@ const aboutData = {
   about: {
     title: "ABOUT",
     content:
-      "Jo (He/Him) designs interfaces. He thrives in complex, ambiguous problem spaces focused around interactive media, digital tooling, and multimodal interaction. He studied Communication Design↗ and Human-Computer Interaction↗ at Carnegie Mellon University, an experience he holds fondly and will cherish for the rest of his life. If you have an interesting idea, please get in touch↗.",
+      "Harsh (He/Him) builds cross-platform apps. He thrives in fast-paced, user-focused environments blending real-time tech, clean architecture, and thoughtful design. He’s studying Computer Science & Engineering at Bihar Engineering University—a journey shaping how he thinks, builds, and grows. If you're working on something exciting, feel free to reach out↗.",
   },
   team: {
     title: "TEAM",
     companies: [
       {
-        name: "Notion",
-        duration: "2025 – Present",
-      },
-      {
-        name: "Azuki",
-        duration: "2023 – 2025",
+        name: "Go Extra Mile",
+        duration: "May, 2024 – Present",
       },
     ],
   },
   description: {
     title: "DESCRIPTION",
     content: [
-      "Building beautiful tools for your life’s work.",
-      "First full-time design hire. Scaled design team to 5 people. Built Anime.com, Animee, and interactive experiences for the Azuki IP.",
-      "Design consulting for emerging AI and productivity companies. Notable clients include Anysphere (Cursor AI), Rox, and Brain Technologies (Natural AI).",
+      "Building scalable tools for everyday systems.",
+      "Flutter engineer focused on real-time platforms, map-based services, and business automation. Built HelpNest and BiZtrack from the ground up using BLoC, Firebase, and Supabase.",
+      "Currently interning at Go Extra Mile, contributing to production-grade Flutter modules, clean architecture, and SDK integrations like Razorpay and Google Maps..",
     ],
   },
 };
