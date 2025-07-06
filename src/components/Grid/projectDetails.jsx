@@ -13,6 +13,8 @@ export const projectDetails = [
     duration: "4 months",
     images: [
       "https://ik.imagekit.io/disast3r/clean%20architecture/black.png?updatedAt=1751834727801",
+      "https://ik.imagekit.io/disast3r/helpnest/helpnest_clay_1.png?updatedAt=1751836094901",
+      "https://ik.imagekit.io/disast3r/helpnest/helpnest_clay_2.png?updatedAt=1751836241977",
     ],
   },
   {
