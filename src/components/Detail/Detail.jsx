@@ -30,6 +30,21 @@ const Detail = () => {
                 </div>
               ))}
             </div>
+
+            <div className="links-container">
+              {detailData.links?.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="linkbox"
+                >
+                  <span>{item.title}</span>
+                </a>
+              ))}
+            </div>
+
             <div className="detail">
               <div className="detail-tile">
                 <p>ROLE</p>

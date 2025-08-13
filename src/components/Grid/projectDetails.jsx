@@ -8,6 +8,12 @@ export const projectDetails = [
       "Real-time platform connecting users with nearby service providers using live location, Mapbox API, and Firebase.",
       "Built with Flutter and BLoC architecture; integrated Firestore and Supabase for scalable data operations and secure file storage.",
     ],
+    links: [
+      {
+        title: "Github Link",
+        link: "https://github.com/brogrammercode/helpNest",
+      },
+    ],
     role: "Flutter",
     collaborators: ["Harsh Kumar"],
     duration: "4 months",
@@ -25,6 +31,12 @@ export const projectDetails = [
     description: [
       "Business management app supporting inventory, orders, staff, and daily sales tracking in real time.",
       "Architected with modular BLoC structure and Firebase backend to ensure offline-first performance and multi-device sync.",
+    ],
+    links: [
+      {
+        title: "Github Link",
+        link: "https://github.com/brogrammercode/Business-Management",
+      },
     ],
     role: "Flutter + Firebase",
     collaborators: ["Harsh Kumar"],
@@ -44,6 +56,16 @@ export const projectDetails = [
     description: [
       "Flash deal and reward platform offering users exclusive coupon codes and discounts across partner websites.",
       "Built using Flutter, Firebase, and Cloud Functions to manage referral logic, coupon distribution, and user segmentation in real time.",
+    ],
+    links: [
+      {
+        title: "Play Store Link",
+        link: "https://play.google.com/store/search?q=Go%20Extra%20Mile&c=apps&hl=en",
+      },
+      {
+        title: "App Store Link",
+        link: "https://apps.apple.com/in/app/go-extra-mile/id6499072540",
+      },
     ],
     role: "Core Flutter Developer",
     collaborators: ["GEM DEV TEAM lead by Harsh"],
