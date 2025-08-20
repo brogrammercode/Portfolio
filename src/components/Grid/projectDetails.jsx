@@ -76,23 +76,22 @@ export const projectDetails = [
       "https://ik.imagekit.io/disast3r/gem/R46LGaSb47ZG-I7w7m3RaluKLHwmUfsIRjVt3F5L17w8IcFbaE5maDQdE1aIAqqr_mEw1052-h592-rw.jpg?updatedAt=1751832981911",
     ],
   },
-  // {
-  //   title: "SKIFF",
-  //   subtitle: "EMAIL + DOCS",
-  //   coverImage:
-  //     "https://joseph.cv/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fskiff.a96af1d4.jpg&w=1920&q=75",
-  //   description: [
-  //     "Skiff is a privacy-first email and document collaboration tool.",
-  //     "My contribution included creating reusable UI blocks and real-time sync logic for collaborative documents.",
-  //   ],
-  //   role: "UI Engineer",
-  //   collaborators: ["Skiff Labs"],
-  //   duration: "5 months",
-  //   images: [
-  //     "https://example.com/skiff-1.jpg",
-  //     "https://example.com/skiff-2.jpg",
-  //   ],
-  // },
+  {
+    title: "CERTIFICATIONS",
+    subtitle: "AND ACHIEVEMENTS",
+    coverImage:
+      "https://ik.imagekit.io/disast3r/Portfolio/cert2.png?updatedAt=1755706537076",
+    description: [
+      "Certified in Flutter & MERN Stack development with hands-on project experience, showcasing strong skills in building scalable applications.",
+      "Completed multiple industry-recognized courses that validate my expertise in modern software development practices.",
+    ],
+    role: "Software Developer",
+    collaborators: ["Harsh"],
+    duration: "5 months",
+    images: [
+      "https://ik.imagekit.io/disast3r/Portfolio/image(1).png?updatedAt=1755706819665",
+    ],
+  },
   {
     title: "CLEAN ARCHITECTURE",
     subtitle: "DESIGN SYSTEM",
