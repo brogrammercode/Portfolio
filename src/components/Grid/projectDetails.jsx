@@ -80,7 +80,7 @@ export const projectDetails = [
     title: "CERTIFICATIONS",
     subtitle: "AND ACHIEVEMENTS",
     coverImage:
-      "https://ik.imagekit.io/disast3r/Portfolio/cert2.png?updatedAt=1755706537076",
+      "https://ik.imagekit.io/disast3r/Portfolio/cert4.png?updatedAt=1755707100936",
     description: [
       "Certified in Flutter & MERN Stack development with hands-on project experience, showcasing strong skills in building scalable applications.",
       "Completed multiple industry-recognized courses that validate my expertise in modern software development practices.",
