@@ -3,12 +3,12 @@ export default function Home() {
   const buttonStyle = `cursor-pointer py-3 px-7 bg-gray-100 rounded-full hover:bg-gray-200`
   return (
     <div className="py-25 flex flex-col items-center">
-      <p className="font-normal">Harsh Kumar</p>
+      <p>Harsh Kumar</p>
       <h1 className={h1Style}>
         Aspiring <span className="underline text-gray-500">Backend Developer</span> - Typescript
       </h1>
       <p className="font-normal max-w-[700px] text-center text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima mollitia qui, dolor quasi, deleniti nihil ex culpa quos necessitatibus totam error, optio aliquid vel inventore.</p>
-      <div className={"flex gap-7 py-10"}>
+      <div className={"flex gap-1 py-10"}>
         <button className={buttonStyle} >
           <span>{"View Projects"}</span>
         </button>
