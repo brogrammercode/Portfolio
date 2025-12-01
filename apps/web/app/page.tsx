@@ -20,7 +20,7 @@ export default function Home() {
         src="https://downloads.ctfassets.net/kftzwdyauwt9/4FnPiaiJdmc3R04H7kGR4N/8b115455fddf2921431f454f65b6ee22/Research_Hero.png?w=1920&q=90&fm=webp"
         alt="hero"
         height={100}
-        className="rounded-lg w-auto px-30 my-10 object-cover"
+        className="rounded-lg w-auto max-w-[1200px] px-30 my-10 object-cover"
       />
       <span className="mt-20">Flutter Developer - Intern</span>
       <h1 className="text-xl mt-6">Go Extra Mile, Hyderabad</h1>
