@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation"
 
 export function Navbar() {
     const path = usePathname()
-    const drawerStyle = `flex-[1.5] h-screen flex flex-col justify-center px-6 space-y-2`
+    const drawerStyle = `flex-[1] h-screen flex flex-col justify-center px-6 space-y-2`
     const drawerTyleStyle = `px-3 py-2 hover:bg-gray-100 transition rounded`
 
     const tyleStyle = (link: string) => {
