@@ -1,4 +1,4 @@
-import { Project, Tech } from "./";
+import { Tech } from "./";
 
 export class Techs {
     static typescript: Tech = {
@@ -78,6 +78,8 @@ export class Techs {
         image: "https://grafana.com/static/img/plugins/loki/loki_icon.svg"
     }
 }
+
+
 export const Projects = [
     {
         name: "Plangen",

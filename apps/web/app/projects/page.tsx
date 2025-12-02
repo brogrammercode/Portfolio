@@ -31,9 +31,12 @@ export default function Home() {
                                 </div>
                             ))}
                         </div>
-                        <div className="flex">
+                        <div className="flex items-end flex-nowrap overflow-x-auto space-x-4 scrollbar-hide">
                             <button className={buttonStyle}>Github</button>
-                            <button className={`${buttonStyle} ml-4`}>Demo</button>
+                            <button className={`${buttonStyle}`}>Demo</button>
+                            {project.techs.map((tech, i) => (
+                                <img key={i} src={tech.image} alt={tech.name} className="h-9 w-9 mx-1 bg-gray-100 rounded-full p-1" />
+                            ))}
                         </div>
                         <img src={project.image} alt={project.name} className="rounded-lg mt-10 object-cover h-[200px] w-full" />
                     </div>

@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} text-[14px] font-[500] flex w-screen`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} text-[14px] flex w-screen scrollbar-hide`}>
         <Navbar />
         <section className="flex-[10] h-screen overflow-y-auto">
           {children}
