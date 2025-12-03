@@ -1,16 +1,12 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Jost } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "../components/navbar";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-});
+const jost = Jost({
+  subsets: ['latin'],
+  variable: '--font-jost',
+})
 
 export const metadata: Metadata = {
   title: "Backend Dev - Harsh",
@@ -24,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} text-[14px] flex w-screen scrollbar-hide`}>
+      <body className={`${jost.variable} text-[14px] font-medium flex w-screen scrollbar-hide`}>
         <Navbar />
         <section className="flex-[10] h-screen overflow-y-auto">
           {children}

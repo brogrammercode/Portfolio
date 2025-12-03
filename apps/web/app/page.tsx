@@ -1,8 +1,8 @@
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRight, ArrowRightIcon, BookIcon, Briefcase, Laptop } from "lucide-react";
 
 export default function Home() {
   const h1Style = `text-5xl py-7 max-w-[500px] text-center`
-  const buttonStyle = `cursor-pointer py-2 px-7 bg-gray-100 rounded-full hover:bg-gray-200`
+  const buttonStyle = `flex items-center gap-2 cursor-pointer py-2 px-7 bg-gray-100 rounded-full hover:bg-gray-200`
 
   const goextramileTasks = [
     "Delivered 14+ production-ready modules, boosting app functionality and increasing DAU by 15%.",
@@ -21,14 +21,16 @@ export default function Home() {
         Backend Developer
       </h1>
       <span className="font-normal max-w-[700px] text-center text-lg">
-        Aspiring <span className="font-semibold">Backend Developer</span> skilled in <span className="underline">TypeScript</span>, applying <span className="underline">best practices</span> and industry-standard tools to create efficient and scalable product solutions.
+        Aspiring <span className="font-semibold">Backend Developer</span> skilled in <span className="font-bold">TypeScript</span>, applying <span className="font-bold">best practices</span> and industry-standard tools to create efficient and scalable product solutions.
       </span>
       <div className={"flex gap-1 py-10"}>
         <button className={buttonStyle} >
           <span>{"View Projects"}</span>
+          <ArrowRight size={16} />
         </button>
         <button className={`${buttonStyle} bg-white`}>
           <span>{"Contact me"}</span>
+          <Laptop size={16} />
         </button>
       </div>
       <img
@@ -37,7 +39,10 @@ export default function Home() {
         height={100}
         className="rounded-lg w-auto max-w-[1200px] px-30 my-10 object-cover"
       />
-      <span className="mt-20">Flutter Developer - Intern</span>
+      <div className="mt-20 flex items-center gap-4">
+        <span >Flutter Developer - Intern</span>
+        <Briefcase size={16} />
+      </div>
       <h1 className="text-xl mt-6">Go Extra Mile, Hyderabad</h1>
       <h1 className="text-xl text-gray-500">May, 2024 - July, 2025</h1>
       <div className="py-10 max-w-[600px]">
@@ -48,7 +53,10 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <span className="mt-20">Education</span>
+      <div className="mt-20 flex items-center gap-2">
+        <span >Education</span>
+        <BookIcon size={16} />
+      </div>
       <p className="text-xl mt-6">CSE, Bihar Engineering University</p>
       <p className="text-xl text-gray-500">2019-2021</p>
     </div>
